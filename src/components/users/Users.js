@@ -8,7 +8,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/users"); // Replace with your backend URL
+        const response = await axios.get("https://kudosware-backend-q3ha.onrender.com/users"); // Replace with your backend URL
         setData(response.data);
       } catch (error) {
         setError("Error fetching user data");
@@ -30,7 +30,7 @@ const Users = () => {
             <h5 className="users-wrapper-title">Email : {user.email} </h5>
             <button className="download-resume">
               <a
-                href={`http://localhost:5000/users/${user._id}/resume`}
+                href={`https://kudosware-backend-q3ha.onrender.com/users/${user._id}/resume`}
                 download
               >
                 Download Resume
