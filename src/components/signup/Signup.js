@@ -67,7 +67,7 @@ const Signup = () => {
         </div>
         <div className="signup-wrapper-box">
           <h6 className="signup-wrapper-header">Password</h6>
-          <input className="signup-wrapper-input" placeholder="*********" onChange={handlePasswordChange} type="password" value={userPassword} />
+          <input className="signup-wrapper-input" placeholder="*********" onChange={handlePasswordChange} type="text" value={userPassword} />
         </div>
         <div className="signup-wrapper-box">
           <h6 className="signup-wrapper-header">Upload Resume</h6>
